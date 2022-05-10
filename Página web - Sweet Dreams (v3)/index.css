@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,300&family=Inria+Serif:ital,wght@1,300&display=swap');
+
+
+/*-----------Principales-----------*/
+body{
+    margin: auto;
+}
+
+/*-----------Header-----------*/
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    background-color: #519D8B;
+    height: 120px;
+}
+.logo{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 40%
+}
+.part-logo h1{
+    color: white;
+}
+.title{
+    font-family: 'Inria Serif', serif;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
+}
+.title .t{
+    font-size: 50px;
+    color: white;
+    margin: auto;
+}
+.title p{
+    color: #D3CF71;
+    margin: 10px;
+}
+.nit{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+.nit h4{
+    margin: 10px;
+}
+.nit p{
+    margin: 10px;
+}
+.logo{
+    text-align: center;
+    font-size: 45px;
+}
+.home{
+    padding: 0px 30px;
+}
+.c-image{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+}
+.c-image img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.textImage{
+    position: absolute;
+    top: 475px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #89EFD7;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 36px;
+}
+.title{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+/*-----------Main-----------*/
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+/*-----------SideBar-----------*/
+.sideBar{
+    width: 20%;
+    text-align: center;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C4C4;
+    height: 50px;
+    font-size: 20px;
+}
+.nosotros{
+    margin: 10px
+}
+.buttom{
+    font-size: 18px;
+    height: 90%;
+    text-decoration: none;
+}
+.buttom h3{
+    text-align: left;
+    border-bottom: solid 1px black;
+    padding: 10px;
+    margin: auto;
+}
+.buttom a{
+    text-decoration: none;
+    color: black;
+}
+.buttom li{
+    list-style: none;
+    text-align: left;
+    border-bottom: solid 1px black;
+}
+.buttom li:hover{
+    color: #519D8B;
+}
+.buttom ul{
+    margin: auto;
+}
+.buttom ul li{
+    padding: 10px 0px;
+}
+.menu a{
+    text-decoration: none;
+}
+.subMenu{
+    display: none;
+}
+.menu li:hover .subMenu{
+    display: block;
+}
+.subMenu li:hover{
+    background-color: #519D8B;
+}
+.servicios p{
+    margin: 0px;
+    padding: 10px;
+    background-color: #035824;
+    color: white;
+}
+
+
+/*-----------Center-----------*/
+.center{
+    width: 80%;
+}
+.bogota{
+    display: none;
+}
+.sanandres{
+    display: none;
+}
+.medellin{
+    display: none;
+}
+.tunja{
+    display: none;
+}.cali{
+    display: none;
+}
+.center h1{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background-color: #D3CF71;
+}
+.center h3{
+    font-size: 30px;
+    margin: 40px 5% 5px 5%;
+}
+.plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #519D8B;
+}
+.plan img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan h5{
+    text-align: center;
+}
+.plan1{
+    width: 30%;
+    padding: 1%;
+    border: solid 2px black;
+    background-color: #519D8B;
+}
+.plan2{
+    width: 30%;
+    padding: 1%;
+    border: solid 2px black;
+    background-color: #519D8B;
+}
+.plan3{
+    width: 30%;
+    padding: 1%;
+    border: solid 2px black;
+    background-color: #519D8B;
+}
+button{
+    background-color: #D3CF71;
+}
+.gastronomia{
+    padding-bottom: 10px;
+    border-bottom: solid 2px #519D8B;
+}
+.gastronomia img{
+    width: 100%;
+}
+.imagenes-pastas{
+    width: 33.333%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.eventos img{
+    width: 45%;
+    margin-left: 3%;
+}
+.eventos{
+    padding-bottom: 10px;
+    border-bottom: solid 2px #519D8B;
+}
+.eventos p{
+    text-align: justify;
+    padding: 2%;
+}
+.huespedes{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 2px #519D8B;
+}
+.huespedes p{
+    text-align: justify;
+    padding: 2%;
+}
+.tablas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+table tr, th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px 5px;
+}
+table h4{
+    margin-bottom: 5px;
+}
+.cotizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*-----------Profile-----------*/
+.profile{
+    width: 20%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C4C4C4;
+}
+.profile img{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px 0px;
+}
+.r-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r-me{
+    font-size: 15px;
+    background-color: white;
+    padding: 10px 20px;
+}
+.name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px;
+}
+.datos{
+    margin: auto;
+    font-size: 14px;
+}                
+.r-study{
+    font-size: 14px;
+    text-align: justify;
+    margin: 0px;
+    padding: auto;
+    padding: 5px 10px;
+}
+.r-study p{
+    margin: 0px 0px 5px 0px;
+}
+.r-study ul{
+    margin: 0px;
+}
+
+
+/*-----------Footer-----------*/
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    padding: 10px;
+    width: 100%;
+    background-color: #519D8B;
+    color: white;
+}
+.f1{
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    padding: 0px 60px;
+    font-size: 30px;
+}
+.icons i{
+    margin: 20px;
+}
+.f2{
+    width: 33.3%;
+    text-align: center;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    font-size: 15px;
+}
+.f3{
+    width: 33.3%;
+    text-align: center;
+    font-size: 15px;
+}
+.f2 img{
+    width: 120px;
+    margin: 0px;
+}
+.f2 p{
+    margin: auto;
+}
+.f3 p{
+    color: black;
+}
+.f3 h1{
+    margin: 0px;
+}
+
+
+

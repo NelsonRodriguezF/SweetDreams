@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="/index.html"><img src="./Imagenes/LogoMakr-4eqccb.png" alt="Logo"></a>
+            <a href="/Página%20web%20-%20Sweet%20Dreams%20(v3)/"><img src="./Imagenes/LogoMakr-4eqccb.png" alt="Logo"></a>
         </div>
         <div class="title">
             <p class="t">Sweet Dreams</p>
@@ -71,7 +71,7 @@
                             <li> <a href="#">Huéspedes</a> </li>
                         </ul>
                     </li>
-                    <li> <a class="enlaceCali" href="#">Cali</a> 
+                    <li> <a class="enlaceCali" href="">Cali</a> 
                         <ul class="subMenu">
                             <li> <a href="#">Planes</a> </li>
                             <li> <a href="#">Gastronomía</a> </li>
@@ -82,7 +82,7 @@
                     </li>
                 </ul>
                 <section class="servicios">
-                    <a href="#">
+                    <a href="/Página%20web%20-%20Sweet%20Dreams%20(v3)/">
                         <p>Servicios <i class="fa-solid fa-watch-calculator"></i></p>
                     </a>
                 </section>
@@ -883,7 +883,7 @@
                         <td>30%</td>
                     </tr>
                 </table>
-<!--                 <h4>Descuentos por número de servicios</h4>
+                <h4>Descuentos por número de servicios</h4>
                 <table>
                     <tr>
                         <th>Cantidad de servicios</th>
@@ -909,7 +909,7 @@
                         <td>5 o más</td>
                         <td>20%</td>
                     </tr>
-                </table> -->
+                </table>
             </div>
             <div class="cotizar">
                 <h2>Cotiza aquí nuestros servicios</h2>
@@ -924,7 +924,6 @@
                     <p><input type="checkbox" name="suit"> Suit</p>
                     <p><input type="checkbox" name="evento"> Eventos</p>
                     <p><input type="submit" value="Enviar"></p>
-
                 </form>
 
                 <?php
@@ -936,7 +935,7 @@
                 $doble = isset($_REQUEST['doble']);
                 $triple = isset($_REQUEST['triple']);
                 $suit = isset($_REQUEST['suit']);
-                $eventos = isset($_REQUEST['eventos']);
+                $eventos = isset($_REQUEST['evento']);
 
                 $precioSencilla = 50000;
                 $precioDoble = 75000;
@@ -953,30 +952,27 @@
                 }
 
                 if($sencilla && $nuevo){
-                    foreach ($tiempo as $key => $value) {
-                        // code...
-                    }
-                    echo $precioSencilla;
+                    echo "Valor a pagar: ". $precioSencilla;
                 } else if($sencilla && $antiguo){
                     echo "Habitacion sencilla " . ($precioSencilla - ($precioSencilla * $descuentoAntiguo));
                 }
                 if($doble && $nuevo){
-                    echo $precioDoble;
+                    echo "Valor a pagar: ". $precioDoble;
                 } else if($doble && $antiguo){
                     echo "Habitacion doble " . ($precioDoble - ($precioDoble * $descuentoAntiguo));
                 }
                 if($triple && $nuevo){
-                    echo $precioTriple;
+                    echo "Valor a pagar: " . $precioTriple;
                 } else if($triple && $antiguo){
                     echo "Habitacion triple " . ($precioTriple - ($precioTriple * $descuentoAntiguo));
                 }
                 if($suit && $nuevo){
-                    echo $precioSuit;
+                    echo "Valor a pagar: " . $precioSuit;
                 } else if($suit && $antiguo){
                     echo "Habitacion suit " . ($precioSuit - ($precioSuit * $descuentoAntiguo));
                 }
                 if($eventos && $nuevo){
-                    echo $precioEventos;
+                    echo "Valor a pagar: " . $precioEventos;
                 } else if($eventos && $antiguo){
                     echo "Valor del evento " . ($precioEventos - ($precioEventos * $descuentoAntiguo));
                 }

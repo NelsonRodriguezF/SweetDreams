@@ -5,7 +5,7 @@ Esta enfocado a que el usuario por medio de SPA pueda navegar e interactar con e
 
 ## Lenguajes implementados
 
-JavaScript - HTML - CSS
+JavaScript - PHP - HTML - CSS
 
 ## Diseño Figma
 
